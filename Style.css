@@ -784,6 +784,9 @@ section{
 .carousel-text h2{
     text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
     font-size: 1.5rem;
+    word-wrap: break-word; /* CSS property for older browsers */
+    overflow-wrap: break-word; /* CSS property for newer browsers */
+    flex-wrap: wrap;
 }
 
 .carousel-item button {
@@ -874,7 +877,7 @@ section{
   .modal-content {
     background-color: #deeccf;
     margin: 10% auto;
-    padding: 20px;
+    padding: 5px;
     border-radius: 5px;
     width: 600px;
     display: flex;
@@ -887,6 +890,7 @@ section{
   @media screen and (max-width: 800px){
     .modal-content{
         width: 80%;
+        padding: 5px;
     }
   }
 
@@ -932,6 +936,12 @@ section{
     margin-left: 2rem;
 }
 
+@media screen and (max-width: 800px){
+    .language{
+        margin-left: 0.5rem;
+    }
+}
+
 .language img{
     width: 60px;
     height: 60px;
@@ -973,5 +983,22 @@ section{
 @media screen and (max-width: 800px){
     .language ul li{
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .language ul li .star{
+        width: 15px;
+        height: 15px;
+    }
+
+    .language ul li .unfilled-star{
+        width: 15px;
+        height: 15px;
+    }
+
+    .language ul li .half-filled-star{
+        width: 15px;
+        height: 15px;
     }
 }
