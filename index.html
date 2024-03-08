@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyadeep's</title>
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Section Load animation -->
+    <!-- Add this in your HTML file's head section -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- navbar and header -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="menu-icon" onclick="toggleMenu()" id="menuicon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">Profile</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#project" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+    
+
+    <!-- Home section design -->
+    <section class="home" id="home">
+        <div class="profile"  id="profile">
+        </div>
+        <div class="home-content" id="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Soumyadeep Ghosh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>With 8.5 years of experience in .Net developement and Application Support in various domains including 
+                Banking & Financial Services, Insurance, Travel & Hospitality, etc.
+            </p>
+
+            <div class="icon-buttons">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100094035642719"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/Soprso"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://www.linkedin.com/in/soumyadeep-ghosh-2359917a/"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <a href="#" class="btn" onclick="downloadFile()">Resume</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section design -->
+    <section class="about" id="about">
+        <div class="myself-header" id="myself-header">
+            <h1 id="heading">
+                <span class="aboutheader">Education</span> 
+                <span class="me">And</span>
+                <span class="aboutheader">Experience</span> 
+            </h1>
+            <div class="walk">
+                <img src="walk.gif" style="height: 60px;width: 60px;" alt="">
+            </div>
+        </div>
+        <div class="myself-description">
+            <div class="aboutprofilepic">
+                <div class="education">
+                    <h2>Education</h2>
+                    <img src="education.gif" style="height: 40px;width: 40px;" alt="">
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>West Bengal University of Technology, Kolkata</h3>
+                            <p>B.Tech in Information Technology</p>
+                            <p>August 2010 - July 2014</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Sudhir Memorial Institute, Kolkata</h3>
+                            <p>Higher Secondary (Science)</p>
+                            <p>May 2008 - March 2010</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Aditya Academy Secondary, Kolkata</h3>
+                            <p>Class X</p>
+                            <p>March 2008</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutdescription">
+                <div class="experience">
+                    <h2>Experience</h2>
+                    <img src="work.gif" style="height: 40px;width: 40px;" alt="">
+                </div>
+                <div class="timeline">
+                    <!-- LTI Mindtree -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>LTIMindtree, Kolkata</h3>
+                                <!-- Collapsible section -->
+                                <div class="collapsible-content collapsed">
+                                    <p>Technical Lead</p>
+                                    <p>16th August 2022 - 3rd October 2023</p>
+                                    <h4>Technologies:</h4>
+                                    <ul>
+                                        <li>SQL Server</li>
+                                        <li>Adobe Livecycle</li>
+                                        <li>Windward Studios</li>
+                                    </ul>
+                                    <h4>Version Control:</h4>
+                                    <p>TFS/ GIT</p>
+                                    <h4>Responsibilities and Achievements:</h4>
+                                    <ul>
+                                        <li>Application Support and Maintenance: Played a key role in providing support and maintaining the Insurance application.</li>
+                                        <li>Team Management: Managed a team, including task distribution and regular coordination with the Project Manager on team goals.</li>
+                                    </ul>
+                                </div>
+                                <!-- Expand/Collapse button -->
+                                <button class="expand-btn">See More</button>
+                        </div>
+                    </div>
+                    <!-- Repeat for other experiences/projects -->
+                    <!-- Cognizant 2022 - 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Cognizant, Kolkata</h3>
+                                <!-- Collapsible section -->
+                                <div class="collapsible-content collapsed">
+                                    <p>Associate</p>
+                                    <p>Nov 2021- August 2022</p>
+                                    <h4>Technologies:</h4>
+                                    <ul>
+                                        <li>.NET Framework</li>
+                                        <li>SQL Server</li>
+                                        <li>C#</li>
+                                        <li>Web API</li>
+                                        <li>Entity Framework</li>
+                                    </ul>
+                                    <h4>Version Control:</h4>
+                                    <p>TFS/ GIT</p>
+                                    <h4>Build Management Tool:</h4>
+                                    <p>TeamCity</p>
+                                    <h4>Deployment Tool:</h4>
+                                    <p>Octopus</p>
+                                    <h4>Responsibilities and Achievements:</h4>
+                                    <ul>
+                                        <li>Migration of .NET Services</li>
+                                        <li>Successfully led the migration of .NET services from Framework 1.0 to 4.8.</li>
+                                        <li>Contributed to the development of a web application for the Travel and Hospitality sector.</li>
+                                    </ul>
+                                </div>
+                                <!-- Expand/Collapse button -->
+                                <button class="expand-btn">See More</button>
+                        </div>
+                    </div>
+                    <!-- Cognizant 2017 - 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Cognizant, Kolkata</h3>
+                                <!-- Collapsible section -->
+                                <div class="collapsible-content collapsed">
+                                    <p>Programmer Analyst</p>
+                                    <p>May 2017- October 2021</p>
+                                    <h4>Technologies:</h4>
+                                    <ul>
+                                        <li>.NET Framework</li>
+                                        <li>SQL Server</li>
+                                        <li>C#</li>
+                                        <li>AngularJS/Angular</li>
+                                        <li>Asp.NET Web API</li>
+                                        <li>ADO.Net</li>
+                                        <li>HTML5/ CSS</li>
+                                        <li>Javascript</li>
+                                        <li>Typescript</li>
+                                    </ul>
+                                    <h4>Ticketing Tool:</h4>
+                                    <p>ServiceNow</p>
+                                    <h4>Monitoring Tool:</h4>
+                                    <p>Dynatrace</p>
+                                    <h4>Version Control:</h4>
+                                    <p>TFS/ GIT</p>
+                                    <h4>Responsibilities and Achievements:</h4>
+                                    <ul>
+                                        <li>Application Development & Support:
+                                            Played a vital role in the development and support of the web platform for financial advisors.</li>
+                                        <li>Migration and Maintenance:
+                                            Successfully migrated and maintained the platform, contributing to its stability and performance.</li>
+                                        <li>
+                                            Technological Expertise:
+                                            Developed expertise in technologies like AngularJS, Asp.NET Web API, and ServiceNow ticketing tool.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Expand/Collapse button -->
+                                <button class="expand-btn">See More</button>
+                        </div>
+                    </div>
+                    <!-- Cognizant 2015 - 2017 -->
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Cognizant, Kolkata</h3>
+                                <!-- Collapsible section -->
+                                <div class="collapsible-content collapsed">
+                                    <p>Programmer Analyst Trainee</p>
+                                    <p>March 2015 - April 2017</p>
+                                    <h4>Technologies:</h4>
+                                    <ul>
+                                        <li>SQL Server</li>
+                                        <li>Powerbuilder</li>
+                                        <li>SABRE</li>
+                                    </ul>
+                                    <h4>Version Control:</h4>
+                                    <p>Serena</p>
+                                    <h4>Responsibilities and Achievements:</h4>
+                                    <ul>
+                                        <li>
+                                            Application Development:
+                                            Contributed to the development of a web platform for the insurance sector using Powerbuilder and SQL Server.
+                                        </li>
+                                        <li>
+                                            Maintenance and Support:
+                                            Played a role in maintaining and supporting the insurance platform.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Expand/Collapse button -->
+                                <button class="expand-btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section Design -->
+    <section class="skills" id="skills">
+        <div class="skill-header">
+            <h1 id="skill-heading">
+                <span class="my">My</span>
+                <span class="skills-text">Skills</span>
+            </h1>
+        </div>
+        <!-- Modal -->
+        <!-- BackEnd Modal -->
+        <div id="myBackEndModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Technology Details</h2>
+                <div id="modalContent">
+                   <div class="language">
+                        <h3>Languages <img src="code.gif" alt="language-icon"></h3>  
+                        <ul>
+                            <li>
+                                C# &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="unfilled-star"></span>
+                            </li>
+                            <li>Python
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="unfilled-star"></span>
+                                    <span class="unfilled-star"></span>
+                            </li>
+                            <li>Javascript
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="unfilled-star"></span>
+                                    <span class="unfilled-star"></span>
+                            </li>
+                        </ul>
+                   </div>
+                   <div class="language">
+                    <h3>Technologies <img src="serverapi.gif" alt=""></h3>
+                    <ul>
+                        <li>Api => REST APIs
+                            &nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="half-filled-star"></span>
+                        </li>
+                        <li>.Net/.Net
+                            Core 6 (MVC)
+                            &nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="unfilled-star"></span>
+                        </li>
+                        <li>ADO.Net
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="half-filled-star"></span>
+                        </li>
+                        <li>Entity Framework
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="unfilled-star"></span>
+                                    <span class="unfilled-star"></span>
+                        </li>
+                    </ul>
+               </div>
+                </div>
+            </div>
+        </div>
+        <!-- Front-end Modal -->
+        <div id="myFrontEndModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle">Front-End Technologies</h2>
+                <div class="separator"></div>
+                <div id="modalContent">
+                   <div class="language">
+                        <h3>Languages <img src="code.gif" alt="language-icon"></h3>  
+                        <ul>
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                        </ul>
+                   </div>
+                   <div class="language">
+                    <h3>Technologies <img src="serverapi.gif" alt=""></h3>
+                    <ul>
+                        <li>Api => REST APIs</li>
+                        <li>.Net Framework/.Net
+                            Core 6 (MVC)</li>
+                        <li>ADO.Net</li>
+                        <li>Entity Framework</li>
+                    </ul>
+               </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="webapi.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Back-end Dev</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="unfilled-star"></span>
+                    </div>
+                    <button id="openBackEndModalBtn">Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="html-css.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Front-end Dev</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="half-filled-star"></span>
+                        <span class="unfilled-star"></span>
+                        <span class="unfilled-star"></span>
+                    </div>
+                    <button id="openFrontEndModalBtn">Details</button>
+                </div>
+            </div>
+             <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="database-sql.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Database</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="half-filled-star"></span>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="cloud.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Cloud Concepts</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="unfilled-star"></span>
+                        <span class="unfilled-star"></span>
+                        <span class="unfilled-star"></span>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="design-pattern.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Design Pattern</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="unfilled-star"></span>
+                        <span class="unfilled-star"></span>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+             <div class="carousel-item">
+                <div class="skills-image">
+                    <img src="support.gif" alt="Image 1">
+                </div>
+                <div class="carousel-text">
+                    <h2>Application Support/Maintenance</h2>
+                    <div class="star-rating">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <button>Details</button>
+                </div>
+            </div>
+            <!-- Add more carousel items as needed -->
+        </div>
+        
+    </section>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script ref ="javascript" src="Script.js"></script>
+</body>
+</html>
