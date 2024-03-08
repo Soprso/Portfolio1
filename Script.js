@@ -355,3 +355,9 @@ window.onclick = function(event) {
     modalSupport.style.display = "none";
   }
 }
+
+
+function weForecast() {
+    // Redirect to the desired URL
+    window.location.href = "https://soprso.github.io/WeatherForeCast/index.html";
+}

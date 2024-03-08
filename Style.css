@@ -706,6 +706,18 @@ section{
     text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
 }
 
+@media screen and (max-width: 800px) {
+    .skill-header h1{
+        font-size: 2rem;
+    }
+    
+}
+
+.skill-header img{
+    width: 60px;
+    height: 60px;
+}
+
 
 .skill-header .skills-text{
     color:rgb(19, 131, 109);
@@ -1010,3 +1022,299 @@ section{
         height: 15px;
     }
 }
+
+
+
+/* ====================================== Projects Section Design ========================================================= */
+
+.projects{
+    background-color:  #deeccf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-header h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color:  rgb(3, 54, 65);
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+}
+
+@media screen and (max-width: 800px) {
+    .projects-header h1{
+        font-size: 2rem;
+    }
+}
+
+.projects-header img{
+    width: 60px;
+    height: 60px;
+}
+
+.projects-header .projects-text{
+    color:rgb(19, 131, 109);
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    padding: 20px; /* Add padding for space around the carousel */
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-items{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: rgb(3, 54, 65);
+    box-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 400px; /* Set fixed width for carousel items */
+    flex-shrink: 0; /* Prevent items from shrinking */
+    flex-grow: 0; /* Prevent items from growing */
+    border-radius: 5px;
+    transition: 0.6s ease;
+    border: .2rem solid transparent;
+    padding:10px;
+}
+
+
+@media screen and (max-width: 800px){
+    .project-items{
+        height: auto;
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+.projects-image {
+    height: auto;
+    width: 380px;
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+    align-self: center;
+}
+
+@media screen and (max-width: 800px){
+    .projects-image{
+        min-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.projects-image img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of the div */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of the div */
+}
+
+
+.project-items:hover{
+    border-color: rgb(3, 54, 65);
+    box-shadow: 0 .2rem .5rem rgb(3, 54, 65);
+}
+
+.project-title h2{
+    color: rgb(3,54,65);
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    .project-title h2{
+        font-size: 1.2rem;
+    }
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    word-wrap: break-word; /* CSS property for older browsers */
+    overflow-wrap: break-word; /* CSS property for newer browsers */
+}
+
+.project-details p{
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.project-details ul li{
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+
+.visit-btn{
+    color: rgb(3, 54, 65);
+    border: .2rem solid rgb(3, 54, 65);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    transition: 0.6s ease-in;
+    margin-right: auto;
+    height: 2.5rem;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .visit-btn {
+
+        font-size: 0.8rem;
+        margin-top: 1rem;
+
+    }
+}
+
+
+.visit-btn:hover{
+    background: rgb(3, 54, 65) ;
+    color: whitesmoke;
+    box-shadow: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* ============================================================Contact Page Css================================================ */
+
+.contact{
+    background-color:  #deeccf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color:  rgb(3, 54, 65);
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+}
+
+.contact-form{
+    width: 400px;
+    height: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .2rem solid transparent;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 0 .2rem .5rem rgb(3, 54, 65);
+   /* animation: pulsate 2s infinite;  Apply the pulsating animation */
+    transition: 0.6s ease;
+}
+
+@media screen and (max-width: 850px) {
+    .contact-form {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 1rem;
+        align-items: center;
+    }
+}
+
+.contact-form:hover{
+    animation: none; /* Disable the animation on hover */
+    border-color: rgb(3, 54, 65);
+    box-shadow: 0 .2rem .5rem rgb(3, 54, 65);
+    border: .2rem solid rgb(3, 54, 65);
+}
+
+.form-label {
+    color: rgb(3, 54, 65);
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+.contact-heading img{
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width:800px){
+    .contact-heading{
+        font-size: 2rem;
+    }
+}
+
+.form-input {
+    width: 90%;
+    padding: 10px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid rgb(19, 131, 109);
+}
+
+.form-input:hover{
+    border: 2px solid rgb(3, 54, 65);
+    border-color: rgb(19, 131, 109);
+    box-shadow: 0 0 5px rgb(19, 131, 109);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgb(19, 131, 109);
+    box-shadow: 0 0 5px rgb(19, 131, 109);
+}
+
+.submit-btn {
+    color: rgb(3, 54, 65);
+    border: .2rem solid rgb(3, 54, 65);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+    transition: 0.6s ease-in;
+    height: 2.5rem;
+}
+
+.submit-btn:hover {
+    background: rgb(3, 54, 65) ;
+    color: whitesmoke;
+    box-shadow: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact-text{
+    color:rgb(19, 131, 109);
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
+}
+

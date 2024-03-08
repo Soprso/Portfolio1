@@ -24,7 +24,7 @@
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">Profile</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#project" class="nav-link">Projects</a>
+            <a href="#projects" class="nav-link">Projects</a>
             <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
@@ -248,6 +248,7 @@
             <h1 id="skill-heading">
                 <span class="my">My</span>
                 <span class="skills-text">Skills</span>
+                <img src="skills.gif" alt="">
             </h1>
         </div>
         <!-- Modal -->
@@ -654,6 +655,66 @@
         </div>
         
     </section>
+
+    <!-- Projects Section Design -->
+    <section class="projects" id="projects">
+        <div class="projects-header">
+            <h1 id="projects-heading">
+                <span class="my">My</span>
+                <span class="projects-text">Projects</span>
+                <img src="MyProjects.gif" alt="projects-icon">
+            </h1>
+        </div>
+        <div class="projects-container">
+            <div class="project-items">
+                <div class="projects-image">
+                    <img src="Personal projects1.png" alt="">
+                </div>
+                <div class="separator"></div>
+                <div class="project-title">
+                    <h2>Weather Forecasting Site</h2>
+                </div>
+                <div class="project-details">
+                    <p>Web Site for hourly weather forecast for next 4 days.</p>
+                    <p>Using:</p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <p>API Used:</p>
+                    <ul>
+                        <li>Openweather API</li>
+                        <li>Rapid Weather API</li>
+                    </ul>
+                </div>
+                <div class="visit-site">
+                    <button class="visit-btn" onclick="weForecast()">Visit Site</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section Design -->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h1 class="contact-heading">
+                <span class="my">Contact</span>
+                <span class="contact-text">Me</span>
+                <img src="email-icon.gif" alt="email-icon"></h1>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
     <!-- typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- scroll reveal -->
