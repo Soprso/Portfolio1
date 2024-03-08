@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // =========================================back end modal======================================
 
 // Get the modal element
-var modal = document.getElementById("myBackEndModal");
+var modalBackEnd = document.getElementById("myBackEndModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("openBackEndModalBtn");
@@ -166,8 +166,8 @@ var span = document.getElementsByClassName("close")[0];
 
 // Function to open the modal
 function openModal() {
-  modal.style.display = "flex";
-  modal.style.flexDirection="column";
+    modalBackEnd.style.display = "flex";
+    modalBackEnd.style.flexDirection="column";
 }
 
 // When the user clicks on the button, open the modal
@@ -177,12 +177,181 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    modalBackEnd.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalBackEnd) {
+    modalBackEnd.style.display = "none";
+  }
+}
+
+
+//==================================== front end modal=================================================================================================
+
+// Get the modal element
+var modalFrontEnd = document.getElementById("myFrontEndModal");
+
+// Get the button that opens the modal
+var btnFrontEnd = document.getElementById("openFrontEndModalBtn");
+
+var spanFrontEnd = document.getElementById("closeFrontEndModal");
+
+// Function to open the modal
+function openModalFrontEnd() {
+    modalFrontEnd.style.display = "flex";
+    modalFrontEnd.style.flexDirection="column";
+}
+
+// When the user clicks on the button, open the modal
+btnFrontEnd.onclick = function() {
+  openModalFrontEnd();
+}
+
+// When the user clicks on <span> (x), close the modal
+spanFrontEnd.onclick = function() {
+    modalFrontEnd.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalFrontEnd) {
+    modalFrontEnd.style.display = "none";
+  }
+}
+
+// ================================================================database modal====================================================
+
+// Get the modal element
+var modalDB = document.getElementById("dataBaseModal");
+
+// Get the button that opens the modal
+var btnDB = document.getElementById("dataBaseBtn");
+
+var spanDB = document.getElementById("closedataBaseModal");
+
+// Function to open the modal
+function openDBModal() {
+    modalDB.style.display = "flex";
+    modalDB.style.flexDirection="column";
+}
+
+// When the user clicks on the button, open the modal
+btnDB.onclick = function() {
+    openDBModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+spanDB.onclick = function() {
+    modalDB.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalDB) {
+    modalDB.style.display = "none";
+  }
+}
+
+
+// ==========================================================cloud concepts modal============================================================
+
+// Get the modal element
+var modalCloud = document.getElementById("cloudModal");
+
+// Get the button that opens the modal
+var btnCloud = document.getElementById("cloudBtn");
+
+var spanCloud = document.getElementById("closeCloudModal");
+
+// Function to open the modal
+function openCloudModal() {
+    modalCloud.style.display = "flex";
+    modalCloud.style.flexDirection="column";
+}
+
+// When the user clicks on the button, open the modal
+btnCloud.onclick = function() {
+    openCloudModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+spanCloud.onclick = function() {
+    modalCloud.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalCloud) {
+    modalCloud.style.display = "none";
+  }
+}
+
+
+// ================================================Design Pattern Modal Concepts===========================================================
+
+// Get the modal element
+var modalDesignPattern= document.getElementById("designPatternModal");
+
+// Get the button that opens the modal
+var btnDesignPattern = document.getElementById("designPatternBtn");
+
+var spanDesignPattern = document.getElementById("closedesignPatternModal");
+
+// Function to open the modal
+function openDesignPatternModal() {
+    modalDesignPattern.style.display = "flex";
+    modalDesignPattern.style.flexDirection="column";
+}
+
+// When the user clicks on the button, open the modal
+btnDesignPattern.onclick = function() {
+    openDesignPatternModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+spanDesignPattern.onclick = function() {
+    modalDesignPattern.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalDesignPattern) {
+    modalDesignPattern.style.display = "none";
+  }
+}
+
+
+// ======================================================Application maintenance and Support===============================================
+
+// Get the modal element
+var modalSupport= document.getElementById("supportModal");
+
+// Get the button that opens the modal
+var btnSupport = document.getElementById("supportBtn");
+
+var spanSupport = document.getElementById("closeSupportModal");
+
+// Function to open the modal
+function openSupportModal() {
+    modalSupport.style.display = "flex";
+    modalSupport.style.flexDirection="column";
+}
+
+// When the user clicks on the button, open the modal
+btnSupport.onclick = function() {
+    openSupportModal();
+}
+
+// When the user clicks on <span> (x), close the modal
+spanSupport.onclick = function() {
+    modalSupport.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalSupport) {
+    modalSupport.style.display = "none";
   }
 }

@@ -980,9 +980,17 @@ section{
     flex-wrap: wrap;
 }
 
+.language ul li p{
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 800px){
     .language ul li{
         font-size: 1.3rem;
+    }
+
+    .language ul li p{
+        font-size: 0.8rem;
     }
 }
 
