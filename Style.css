@@ -127,6 +127,16 @@ section{
     padding: 5rem 7% 2rem;
 }
 
+@media screen and (max-width:800px){
+    section{
+        min-height: 100vh;
+        padding-top: 5rem;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -1091,7 +1101,6 @@ section{
 @media screen and (max-width: 800px){
     .project-items{
         height: auto;
-        max-width: 320px;
         width: 100%;
     }
 }
@@ -1203,6 +1212,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .contact-container {
@@ -1220,7 +1230,7 @@ section{
 }
 
 .contact-form{
-    width: 400px;
+    width: 500px;
     height: auto;
     margin-right: auto;
     margin-top: 2rem;
@@ -1234,14 +1244,19 @@ section{
     box-shadow: 0 .2rem .5rem rgb(3, 54, 65);
    /* animation: pulsate 2s infinite;  Apply the pulsating animation */
     transition: 0.6s ease;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media screen and (max-width: 850px) {
     .contact-form {
         height: auto;
+        min-width: 300px;
         width: 100%;
         margin-left: 0;
         margin-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-bottom: 1rem;
         align-items: center;
     }
@@ -1259,6 +1274,7 @@ section{
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 1.3rem;
+    text-shadow: 0 .2rem .5rem rgb(19, 131, 109);
 }
 
 .contact-heading img{
@@ -1273,7 +1289,7 @@ section{
 }
 
 .form-input {
-    width: 90%;
+    width: 100%;
     padding: 10px;
     transition: 0.3s ease;
     border-radius: 5px;
@@ -1303,6 +1319,7 @@ section{
     box-shadow: 0 .2rem .5rem rgb(19, 131, 109);
     transition: 0.6s ease-in;
     height: 2.5rem;
+    background-color: transparent;
 }
 
 .submit-btn:hover {
