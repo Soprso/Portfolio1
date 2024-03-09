@@ -361,3 +361,33 @@ function weForecast() {
     // Redirect to the desired URL
     window.location.href = "https://soprso.github.io/WeatherForeCast/index.html";
 }
+
+
+// validate email
+function sendEmail() {
+
+   var name = document.getElementById('name').value.trim();
+   var email = document.getElementById('email').value;
+   var message = document.getElementById('message').value;
+   var body = 'Name: '+name+ '<br><br><br>Email: '+email+'<br><br><br>Message: '+message;
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "ghoshsoumyadeep3@gmail.com",
+        Password : "3C9F770F673796084DF75FDEF8731D916D7F",
+        To : 'ghoshsoumyadeep3@gmail.com',
+        From : 'ghoshsoumyadeep3@gmail.com',
+        Subject : "Greetings!! From MyPortfolio!!",
+        Body : body
+        }).then(
+        message => {
+            if(message=='OK'){
+                swal("Thanks!!", "We received your mail!!", "success");
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            }}
+        );
+
+
+}

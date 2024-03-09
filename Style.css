@@ -1296,6 +1296,7 @@ section{
     margin-bottom: 15px;
     font-size: 1rem;
     border: 1px solid rgb(19, 131, 109);
+    background-color: whitesmoke;
 }
 
 .form-input:hover{
