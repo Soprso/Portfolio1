@@ -364,30 +364,62 @@ function weForecast() {
 
 
 // validate email
-function sendEmail() {
+function validateForm() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
 
-   var name = document.getElementById('name').value.trim();
-   var email = document.getElementById('email').value;
-   var message = document.getElementById('message').value;
-   var body = 'Name: '+name+ '<br><br><br>Email: '+email+'<br><br><br>Message: '+message;
+    // Validate Name field
+    if (name === '') {
+        swal('Please enter your name.');
+        return false;
+    }
+
+    // Validate Email field
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === '') {
+        swal('Please enter your email address.');
+        return false;
+    } else if (!emailRegex.test(email)) {
+        swal('Please enter a valid email address.');
+        return false;
+    }
+
+    // Validate Message field
+    if (message === '') {
+        swal('Please enter your message.');
+        return false;
+    }
+
+    return true; // All fields are valid
+}
+
+function sendEmail() {
+    if (!validateForm()) {
+        return; // Do not send email if form validation fails
+    }
+
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var body = 'Name: ' + name + '<br><br>Email: ' + email + '<br><br>Message: ' + message;
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "ghoshsoumyadeep3@gmail.com",
-        Password : "3C9F770F673796084DF75FDEF8731D916D7F",
-        To : 'ghoshsoumyadeep3@gmail.com',
-        From : 'ghoshsoumyadeep3@gmail.com',
-        Subject : "Greetings!! From MyPortfolio!!",
-        Body : body
-        }).then(
-        message => {
-            if(message=='OK'){
-                swal("Thanks!!", "We received your mail!!", "success");
-                document.getElementById('name').value = '';
-                document.getElementById('email').value = '';
-                document.getElementById('message').value = '';
-            }}
-        );
-
-
+        Host: "smtp.elasticemail.com",
+        Username: "ghoshsoumyadeep3@gmail.com",
+        Password: "3C9F770F673796084DF75FDEF8731D916D7F",
+        To: 'ghoshsoumyadeep3@gmail.com',
+        From: 'ghoshsoumyadeep3@gmail.com',
+        Subject: "Greetings!! From MyPortfolio!!",
+        Body: body
+    }).then(function (message) {
+        if (message === 'OK') {
+            swal("Thanks!!", "I received your mail!!", "success");
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+        } else {
+            swal("Oops!", "There was an error sending your email.", "error");
+        }
+    });
 }
