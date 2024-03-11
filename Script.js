@@ -2,7 +2,7 @@
 
 function downloadFile() {
     // Path to your file
-    const fileUrl = 'Resume_Soumyadeep.pdf';
+    const fileUrl = 'Resume_Soumyadeep_Ghosh.pdf';
 
     // Create a temporary anchor element
     const downloadLink = document.createElement('a');
